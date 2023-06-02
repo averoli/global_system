@@ -1,6 +1,5 @@
 import React from "react";
 import LoginForm from "../../components/login";
-
 import Iconify from "../../components/iconify/Iconify";
 import {
   Link,
@@ -10,11 +9,11 @@ import {
   Stack,
   Button,
 } from "@mui/material";
-import Layout from "../../layouts/auth/Layout";
+
 
 const LoginPage = () => {
   return (
-    <Layout>
+    
       <Container maxWidth="sm">
         <Typography variant="h4" gutterBottom>
           Login to you account
@@ -34,24 +33,6 @@ const LoginPage = () => {
               height={22}
             />
           </Button>
-
-          {/* <Button fullWidth size="large" color="inherit" variant="outlined">
-            <Iconify
-              icon="eva:facebook-fill"
-              color="#1877F2"
-              width={22}
-              height={22}
-            />
-          </Button>
-
-          <Button fullWidth size="large" color="inherit" variant="outlined">
-            <Iconify
-              icon="eva:twitter-fill"
-              color="#1C9CEA"
-              width={22}
-              height={22}
-            />
-          </Button> */}
         </Stack>
 
         <Divider sx={{ my: 3 }}>
@@ -62,7 +43,7 @@ const LoginPage = () => {
 
         <LoginForm />
       </Container>
-    </Layout>
+   
   );
 };
 

@@ -19,14 +19,15 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Poppins",
+    fontFamilyName: "Poppins",
     h1: {
-      fontSize: "2.5rem",
-      fontWeight: "bold",
+      fontSize: "5.5rem",
+      color: "white",
+      
     },
     h2: {
-      fontSize: "2rem",
-      fontWeight: "bold",
+      fontSize: "4.5rem",
+      color: "white",
     },
     h3: {
       fontSize: "1.75rem",

@@ -1,13 +1,15 @@
 import "./App.css";
 import LoginPage from "./pages/auth/LoginPage";
 import { ThemeProvider } from "@mui/material/styles";
-import theme from './theme/theme.js'
+import theme from "./theme/theme.js";
+import Layout from "./layouts/auth";
 
 function App() {
-console.log(theme);
   return (
     <ThemeProvider theme={theme}>
-      <LoginPage />
+      <Layout>
+        <LoginPage />
+      </Layout>
     </ThemeProvider>
   );
 }

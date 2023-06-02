@@ -9,8 +9,9 @@ import {
   InputAdornment,
   TextField,
   Checkbox,
+  FormControlLabel,
 } from "@mui/material";
-import  {LoadingButton}  from "@mui/lab";
+import { LoadingButton } from "@mui/lab";
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -51,8 +52,12 @@ const LoginForm = () => {
         justifyContent="space-between"
         sx={{ my: 2 }}
       >
-        <Checkbox name="remember" label="Remember me" />
-        <Link variant="subtitle2" underline="hover">
+        <FormControlLabel
+          control={<Checkbox name="remember" />}
+          label="Remember me"
+        />
+
+        <Link variant="subtitle2" underline="hover" sx={{ cursor: "pointer" }}>
           Forgot password?
         </Link>
       </Stack>
@@ -65,7 +70,7 @@ const LoginForm = () => {
         color="primary"
         onClick={handleClick}
       >
-        Login
+        Sign In
       </LoadingButton>
     </>
   );

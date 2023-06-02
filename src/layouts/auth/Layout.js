@@ -16,36 +16,22 @@ const Layout = ({ children }) => {
           xs={12}
           lg={6}
           sx={{
-            alignItems: "center",
+            // alignItems: "center",
             backgroundImage: `url(assets/auth-illustration.png)`,
             backgroundSize: "cover",
             color: "white",
             display: "flex",
-            justifyContent: 'center',
+            flexDirection: "column",
+            justifyContent: "space-between",
             "& img": {
               maxWidth: "100%",
             },
+            padding: "2.5rem",
           }}
         >
-          <Typography
-            sx={{
-              fontSize: "58px",
-              lineHeight: "81px",
-              mb: 1,
-            }}
-          >
-            LOGO
-          </Typography>
-          <Typography
-            align="left"
-            color="inherit"
-            sx={{
-              fontSize: "96px",
-              lineHeight: "144px",
-              mb: 1,
-            }}
-            variant="h1"
-          >
+          <Typography variant="h2">LOGO</Typography>
+
+          <Typography variant="h1" sx={{ textAlign: "center" }}>
             Get your queris solved.
           </Typography>
         </Grid>
@@ -56,7 +42,7 @@ const Layout = ({ children }) => {
             backgroundColor: "background.paper",
             display: "flex",
             flexDirection: "column",
-            justifyContent: 'center',
+            justifyContent: "center",
           }}
         >
           <Box
